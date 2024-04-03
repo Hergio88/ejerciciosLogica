@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio N10: calculadora </title>
+    <link rel="stylesheet" href="EjerciciosN10.css">
+</head>
+<body>
+    <h1>Calculadora Básica</h1>
+    <form onsubmit="return false;">
+        <label for="num1">Primer número:</label><br>
+        <input type="number" id="num1" placeholder="Ingrese el primer número" required><br><br>
+        <label for="operator">Operador:</label><br>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br><br>
+        <label for="num2">Segundo número:</label><br>
+        <input type="number" id="num2" placeholder="Ingrese el segundo número" required><br><br>
+        <button onclick="calculadora()">Calcular</button>
+    </form>
+    <p id="result"></p>
+    
+    <script src="EjerciciosN10.js"></script>
+</body>
+</html>
