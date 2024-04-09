@@ -19,4 +19,8 @@ function sortDescending(number) {
     });
   
     return parseInt(digitArray.join(''));
+}// Funciones para redirigir a otras páginas
+function irAPagina1() {
+    window.location.href = "indexEn1.html";
 }
+

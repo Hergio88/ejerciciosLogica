@@ -3,7 +3,7 @@ body {
     height: 50vh;  
 }
 
- label {
+ label, a {
     font-size: 24px; /* Tamaño de fuente grande para los labels */
     font-weight: bold; /* Negrita */
     color: #ffffff; /* Blanco para el texto */

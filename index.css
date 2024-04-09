@@ -12,7 +12,7 @@ body
 }
 @keyframes moverFondo {
     
-    0% {
+    10% {
         background-position: 0 0; /* Posición inicial */
     }
     100% {
@@ -37,5 +37,16 @@ body
     color: #ffffff; 
 }
 
+nav {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    text-align: center; /* Centra los elementos hijos horizontalmente */
+}
+nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
