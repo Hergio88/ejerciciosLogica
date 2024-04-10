@@ -1,24 +1,32 @@
-function calculadora(val1, signo, val2) {
-    // Verificar  valores numericos
-    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
-        return "Error: Los argumentos deben ser números.";
-    }
+function calculadora() {
+    var num1 = parseFloat(document.getElementById('num1').value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var operador = document.getElementById('operator').value;
+    var resultado;
 
-    switch (signo) {
-        case "+":
-            return val1 + val2;
-        case "-":
-            return val1 - val2;
-        case "*":
-            return val1 * val2;
-        case "/":
-            // evita divicion por cero
-            if (val2 === 0) {
-                return "Error: No se puede dividir por cero.";
+
+    switch (operador) {
+        case '+':
+            resultado = num1 + num2;
+            break;
+        case '-':
+            resultado = num1 - num2;
+            break;
+        case '*':
+            resultado = num1 * num2;
+            break;
+        case '/':
+            if (num2 !== 0) {
+                resultado = num1 / num2;
+            } else {
+                resultado = 'Error: división por cero';
             }
-            return val1 / val2;
+            break;
         default:
-            return "Error: Operador inválido.";
+            resultado = 'Operador no válido';
     }
-}
 
+
+    document.getElementById('result').innerText = resultado;
+    alert(resultado); 
+}
